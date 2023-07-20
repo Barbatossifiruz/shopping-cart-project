@@ -9,13 +9,8 @@
 
     <!--! Tailwind output -->
     <link href="/dist/output.css" rel="stylesheet">
-    <!--! Normalize styles (remove) -->
-    <link rel="stylesheet" href="assets/css/normalize.css">
-    <!--! Skeleton styles (remove) -->
-    <link rel="stylesheet" href="assets/css/skeleton.css">
     <!--! Custon Styles -->
     <link rel="stylesheet" href="assets/css/custom.css">
-
     <!--! Iconos  -->
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 
@@ -23,44 +18,82 @@
 
 <body>
 
-    <header id="header" class="pt-[100px] bg-white text-center">
-        <div class="container">
-            <div class="row">
-                <div class="four columns">
-                    <!-- <img src="assets/img/logo.jpg" id="logo"> -->
-                    <h1 class="text-4xl">Logo</h1>
-                    <i class="fi fi-rr-home"></i>
+    <header class="header sticky top-0 bg-white shadow-md flex items-center justify-between px-8 py-02">
 
-                </div>
-                <div class="two columns u-pull-right">
-                    <ul>
-                        <li class="submenu">
-                            <img src="assets/img/cart.png" id="img-carrito">
-                            <div id="carrito">
+        <!--! Logo -->
+        <h1 class="w-3/12 mb-3">
+            <a href="">
+                <h1 class="text-6xl font-bold text-purple-700 ">U<span
+                        class="invisible sm:visible text-5xl text-black">technology</span>
+                </h1>
+            </a>
+        </h1>
 
-                                <table id="lista-carrito" class="u-full-width">
-                                    <thead>
-                                        <tr>
-                                            <th>Imagen</th>
-                                            <th>Nombre</th>
-                                            <th>Precio</th>
-                                            <th>Cantidad</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody></tbody>
-                                </table>
+        <!--! Navegacion  -->
 
-                                <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <nav class="nav font-semibold text-lg">
+            <ul class="flex items-center ">
+                <li
+                    class="p-5 border-b-2 border-purple-500 border-opacity-0 hover:border-opacity-100 hover:text-purple-500 duration-200 cursor-pointer active">
+                    <a href="#">Cursos</a>
+                </li>
+                <li
+                    class="p-5 border-b-2 border-purple-500 border-opacity-0 hover:border-opacity-100 hover:text-purple-500 duration-200 cursor-pointer">
+                    <a href="#">Sobre Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- ! Carrito de compras --->
+        <div class="w-3/12 flex justify-end mr-4">
+            <ul>
+                <li class="submenu">
+                    <svg id="img-carrito" class="h-8 p-1 hover:text-purple-700 duration-200" aria-hidden="true"
+                        focusable="false" data-prefix="far" data-icon="shopping-cart" role="img"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
+                        class="svg-inline--fa fa-shopping-cart fa-w-18 fa-7x">
+                        <path fill="currentColor"
+                            d="M551.991 64H144.28l-8.726-44.608C133.35 8.128 123.478 0 112 0H12C5.373 0 0 5.373 0 12v24c0 6.627 5.373 12 12 12h80.24l69.594 355.701C150.796 415.201 144 430.802 144 448c0 35.346 28.654 64 64 64s64-28.654 64-64a63.681 63.681 0 0 0-8.583-32h145.167a63.681 63.681 0 0 0-8.583 32c0 35.346 28.654 64 64 64 35.346 0 64-28.654 64-64 0-18.136-7.556-34.496-19.676-46.142l1.035-4.757c3.254-14.96-8.142-29.101-23.452-29.101H203.76l-9.39-48h312.405c11.29 0 21.054-7.869 23.452-18.902l45.216-208C578.695 78.139 567.299 64 551.991 64zM208 472c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm256 0c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm23.438-200H184.98l-31.31-160h368.548l-34.78 160z"
+                            class=""></path>
+                    </svg>
+                    <div id="carrito">
+                        <table id="lista-carrito" class="">
+                            <thead class="justify-center">
+                                <tr class="flex gap-5 place-content-between text-lg">
+                                    <th>Imagen</th>
+                                    <th>Nombre</th>
+                                    <th>Precio</th>
+                                    <th>Cantidad</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+
+                        <a href="#" id="vaciar-carrito" class="w-full">Vaciar Carrito</a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </header>
 
-
+    <div id="hero">
+        <div class="container">
+            <div class="flex ">
+                <div class="grid col-span-6">
+                    <div class="contenido-hero">
+                        <h2 class="">Aprende algo nuevo</h2>
+                        <p>Todos los cursos a $15</p>
+                        <form action="#" id="busqueda" method="post" class="formulario">
+                            <input class="u-full-width" type="text" placeholder="¿Que te gustaría Aprender?"
+                                id="buscador">
+                            <input type="submit" id="submit-buscador" class="submit-buscador">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!--! Script Ts -->
     <!-- <script src="/assets/ts/app.ts"></script> -->
