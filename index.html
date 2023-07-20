@@ -56,38 +56,46 @@
                             d="M551.991 64H144.28l-8.726-44.608C133.35 8.128 123.478 0 112 0H12C5.373 0 0 5.373 0 12v24c0 6.627 5.373 12 12 12h80.24l69.594 355.701C150.796 415.201 144 430.802 144 448c0 35.346 28.654 64 64 64s64-28.654 64-64a63.681 63.681 0 0 0-8.583-32h145.167a63.681 63.681 0 0 0-8.583 32c0 35.346 28.654 64 64 64 35.346 0 64-28.654 64-64 0-18.136-7.556-34.496-19.676-46.142l1.035-4.757c3.254-14.96-8.142-29.101-23.452-29.101H203.76l-9.39-48h312.405c11.29 0 21.054-7.869 23.452-18.902l45.216-208C578.695 78.139 567.299 64 551.991 64zM208 472c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm256 0c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm23.438-200H184.98l-31.31-160h368.548l-34.78 160z"
                             class=""></path>
                     </svg>
-                    <div id="carrito">
-                        <table id="lista-carrito" class="">
+                    <div id="carrito" class="drop-shadow-md border-r-2 rounded-b-lg">
+                        <table id="lista-carrito">
                             <thead class="justify-center">
                                 <tr class="flex gap-5 place-content-between text-lg">
                                     <th>Imagen</th>
                                     <th>Nombre</th>
                                     <th>Precio</th>
                                     <th>Cantidad</th>
-                                    <th></th>
                                 </tr>
                             </thead>
                             <tbody></tbody>
                         </table>
 
-                        <a href="#" id="vaciar-carrito" class="w-full">Vaciar Carrito</a>
+                        <button id="vaciar-carrito"
+                            class="p-4 w-[170px] bg-white hover:bg-gray-100 text-purple-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+                            Vaciar Carrito
+                        </button>
                     </div>
                 </li>
             </ul>
         </div>
     </header>
 
-    <div id="hero">
+    <div id="hero" class="h-full">
         <div class="container">
-            <div class="flex ">
-                <div class="grid col-span-6">
-                    <div class="contenido-hero">
-                        <h2 class="">Aprende algo nuevo</h2>
-                        <p>Todos los cursos a $15</p>
+            <div class="">
+                <div class="grid ">
+                    <div class="text-white">
+                        <h2 class="text-6xl ">Aprende algo nuevo</h2>
+                        <p class="text-2xl te font-bold">Todos los cursos a $15</p>
                         <form action="#" id="busqueda" method="post" class="formulario">
-                            <input class="u-full-width" type="text" placeholder="¿Que te gustaría Aprender?"
-                                id="buscador">
+                            <input class="" type="text" placeholder="¿Que te gustaría Aprender?" id="buscador">
                             <input type="submit" id="submit-buscador" class="submit-buscador">
+                            <div class="relative">
+                                <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                                    <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                    </svg>
                         </form>
                     </div>
                 </div>
