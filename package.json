@@ -4,5 +4,23 @@
     },
     "dependencies": {
         "@flaticon/flaticon-uicons": "^2.2.0"
-    }
+    },
+    "name": "shoppingcartweb",
+    "description": "",
+    "version": "1.0.0",
+    "main": "app.js",
+    "scripts": {
+        "dev": "tsc ./assets/ts/app.ts",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Barbatossifiruz/shopping-cart-project.git"
+    },
+    "author": "Elio Soto",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Barbatossifiruz/shopping-cart-project/issues"
+    },
+    "homepage": "https://github.com/Barbatossifiruz/shopping-cart-project#readme"
 }
